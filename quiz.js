@@ -2,7 +2,18 @@ const quizForm = document.querySelector(".quiz-form");
 const submitAnsBtn = document.querySelector("#submit-answer-button");
 const outputElement = document.querySelector("#output");
 
-const correctAnswers = ["Equilateral", "90°", "right angle"];
+const correctAnswers = [
+    "Equilateral",
+     "90°",
+      "right angle",
+        "60°",
+     "A triangle can have two acute angles",
+        "2 cm, 2 cm, 4 cm",
+        "3",
+        "80",
+        "obtuse-angled",
+        "isosceles"
+];
 
 function calculateScore(){
     let score =0;

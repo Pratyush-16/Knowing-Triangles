@@ -16,10 +16,11 @@ nav{
     background-color: gray;
     color: white;
     padding: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
     width: 100%;
     font-size: larger;
     margin: auto;
+     border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .header{
@@ -102,14 +103,14 @@ button{
 }
 
 .question-container{
-    display: block;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    border: 1px solid black;
-    border-radius: 2rem;
-    font-size: larger;
-    width: 100%;
-    max-width: 200px;
+    margin: 1rem auto;
+    max-width: 600px;
     text-align: center;
-    margin: 3rem;
+}
+
+.question-bank label {
+    display: inline;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
 }
