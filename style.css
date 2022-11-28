@@ -69,8 +69,9 @@ div{
    }
  
    label{
-    display: block;
+    display: inline-block;
     font-size: larger;
+    vertical-align: top;
 }
 
 input{
@@ -81,6 +82,7 @@ input{
     font-size: larger;
     width: 100%;
     max-width: 200px;
+    display: inline-block
 }
 
 button{
@@ -106,10 +108,11 @@ button{
     margin: 1rem auto;
     max-width: 600px;
     text-align: center;
+
 }
 
 .question-bank label {
-    display: inline;
+    display: inline-block;
     margin: auto;
     text-align: center;
     padding: 10px;

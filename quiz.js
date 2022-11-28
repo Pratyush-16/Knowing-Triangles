@@ -7,7 +7,7 @@ const correctAnswers = [
      "90°",
       "right angle",
         "60°",
-     "A triangle can have two acute angles",
+     "None",
         "2 cm, 2 cm, 4 cm",
         "3",
         "80",
