@@ -1,24 +1,30 @@
-const inputs = document.querySelectorAll(".angle-input");
+const angleInput = document.querySelectorAll(".angle-input");
 const isTriangleBtn = document.querySelector("#is-triangle-button");
 const checkOutput = document.querySelector("#output");
 
+
+isTriangleBtn.addEventListener("click", isTriangle);
+
 function calculateSum(angle1,angle2,angle3){
     const sumOfAngles = angle1 + angle2 + angle3;
-    //console.log(sumOfAngles);
     return sumOfAngles;
 }
 
-function isTriangle(){
-    const sumOfAngles = calculateSum(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value));
-    //console.log( inputs[0].value,inputs[1].value,inputs[2].value);
-    //console.log(sumOfAngles);
-    if(sumOfAngles ===180){
-        checkOutput.innerText = "yes, triangles can be formed";
+function isTriangle() {
+    
+    const sumOfAngles = calculateSum(Number(angleInput[0].value) , Number(angleInput[1].value) ,  Number(angleInput[2].value))
+    if((angleInput[0].value) > 0 && (angleInput[1].value) > 0  && (angleInput[2].value) > 0 ){
+       if(sumOfAngles === 180) {
+           checkOutput.innerText = "Yes, Triangle can be formed."
+       } else{
+           checkOutput.innerText = "Trinagle cannot be formed,check angles again."
+       }
     } else{
-        checkOutput.innerText ="No. triangles can not be formed";
+   checkOutput.innerText= "Input correct value."
     }
-}
+    
+   }
 
 
 
-isTriangleBtn.addEventListener("click", isTriangle);
+
