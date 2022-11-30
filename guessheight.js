@@ -12,7 +12,7 @@ function checkHypotenuse(){
     const sumOfSquares = calculateSumofSquares(Number(input[0].value),Number(input[1].value));
     const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
     //console.log(lengthOfHypotenuse);
-    outputElement.innerText = "The length of hypotenuse is: " + lengthOfHypotenuse +"cm";
+    outputElement.innerText = "The length of hypotenuse is: " + lengthOfHypotenuse.toFixed(3) +"cm";
 
 }
 
